@@ -12,65 +12,192 @@
     font-family:Instrument-Sans;
     src:url("fonts/InstrumentSans-Regular.ttf")
 }
+@font-face{
+  font-family: IstokWeb-Regular;
+  src:url("fonts/IstokWeb-Regular.ttf")
+}
+/* Reset default spacing and box model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #454545; 
-  color: #fff;
-  padding: 10px 20px;
-}
-.logo {
+  justify-content: space-between;
+  background-color: #454545;
+  color: white;
+  padding: 15px 20px;
   position: relative;
+}
+
+.logo {
   font-size: 53px;
-  text-align: left;
-  display: inline-block;
-  padding-bottom: 10px; 
+  font-family: Italiana-Regular;
+}
+
+/* Center nav */
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-menu {
   display: flex;
-  gap: 30px;
+  font-family:Instrument-Sans;
+  gap: 25px;
 }
 
-.nav-menu a,
-.signup a {
-  color: white;
+.nav-menu a {
   text-decoration: none;
-  font-size: 20px;
-  font-family:Instrument-Sans;
+  color: white;
+  font-size: 24px;
+  font-family: sans-serif;
   transition: color 0.3s;
 }
 
-.nav-menu a:hover,
-.signup a:hover {
-  color: #000000; /* optional hover color */
+.nav-menu a:hover {
+  color: #000;
 }
-.logo::before
+
+.signup a {
+  color: white;
+  font-size: 24px;
+  font-family:Instrument-Sans;
+  text-decoration: none;
+}
+
+/* Hamburger (hidden by default) */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Hide mobile sign-up link by default */
+.signup-mobile {
+  display: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .logo {
+    font-size: 30px;
+    font-family: Italiana-Regular;
+  }
+  .nav-center {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #454545;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 15px 0;
+  }
+
+  .nav-center.show {
+    display: flex;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size:5px ;
+    font-family:Instrument-Sans;
+  }
+
+  .signup {
+    display: none; /* hide desktop sign-up */
+  }
+
+  .signup-mobile {
+    display: block; /* show in menu */
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+}
+
+.hero {
+  background-image: url('images/home.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 20px;
+  color: black;
+  text-align: center;
+}
+
+.hero-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-text h1 {
+  font-size: 128px;
+  font-family:Italian-Regular;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+.hero-text .tagline {
+  font-size: 19px;
+  margin-bottom: 20px;
+  font-family: IstokWeb-Regular;
+}
+
+.hero-text .description {
+  font-size: 20px;
+  line-height: 1.6;
+  font-family: IstokWeb-Regular;
+}
+
+@media (max-width: 768px)
 {
-  content: "";
-  position: absolute;
-  left: 0px;
-  height: 2px;
-  background-color: white;
-  padding-left: 100px;
-}
-.logo::after{
-  content: "";
-  position: absolute;
-  left:10px;
-  height: 2px;
-  background-color: white;
-  padding-left: 100px;
+.hero {
+  background-image: url('images/home.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 10px;
+  color: black;
+  text-align: center;
 }
 
-
-.logo::before {
-  bottom: 10px;
-  width: 50%;
+.hero-text {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.logo::after {
-  bottom: 5px;
-  width: 60%;
+.hero-text h1 {
+  font-size: 64px;
+  font-family:Italian-Regular;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+.hero-text .tagline {
+  font-size: 15px;
+  margin-bottom: 20px;
+  font-family: IstokWeb-Regular;
+}
+
+.hero-text .description {
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: IstokWeb-Regular;
+}  
 }

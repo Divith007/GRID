@@ -86,7 +86,7 @@
 
 /* Responsive Styling */
 @media (max-width: 768px) {
-.logo {
+  .logo {
     font-size: 30px;
     font-family:Italian-Regular ;
   }

@@ -1,6 +1,5 @@
-console.log("Script loaded!");
+console.log("JS file is working!");
 
-document.getElementById('menu-toggle')?.addEventListener('click', function () {
-  console.log("Hamburger clicked");
+document.getElementById('menu-toggle')?.addEventListener('click', () => {
   document.getElementById('nav-menu')?.classList.toggle('show');
 });

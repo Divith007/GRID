@@ -202,3 +202,41 @@
   font-family: IstokWeb-Regular;
 }  
 }
+
+
+/*PC Footer */
+.footbar
+{
+  background-color: #454545;
+  display:flex;
+  color: #fff;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.fmlogo
+{
+  font-size: 30px;
+  padding-top: 27px;
+  padding-left:35px;
+  font-family: Italian-Regular;
+}
+.address{
+  font-size: 10px;
+  font-family:Instrument-Sans;
+  padding-top: 5px;
+  padding-left:50px;
+}
+
+.sociallinks{
+  display:flex;
+  padding-left: 100px;
+  justify-content: center;
+}
+.sociallinks h1{
+  font-family: IstokWeb-Regular;
+  padding-top: 26px;
+  padding-right:15px;
+}
+.InfServ{
+  display: flex;
+}

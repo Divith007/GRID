@@ -240,3 +240,6 @@
 .InfServ{
   display: flex;
 }
+.slink{
+  text-decoration: none;
+}

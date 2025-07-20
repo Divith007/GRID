@@ -226,10 +226,14 @@
   padding-top: 5px;
   padding-left:50px;
 }
+.flogo{
+  padding-bottom: 30px;
+}
 
 .sociallinks{
   display:flex;
   padding-left: 100px;
+  padding-top:10px;
   justify-content: center;
 }
 .sociallinks h1{
@@ -239,7 +243,70 @@
 }
 .InfServ{
   display: flex;
+    align-items: center;
+  justify-content: space-between;
+  
 }
 .slink{
   text-decoration: none;
+  color:white;
+  font-family:IstokWeb-Regular;
+  font-size:14px;
+}
+
+.info h1{
+  font-size: 20px;
+  font-family:IstokWeb-Regular;
+}
+.Serv h1{
+  font-size: 20px;
+  font-family: IstokWeb-Regular;
+}
+
+.Serv{
+  padding-left: 30px;
+}
+
+@media (max-width: 768px) {
+  .footbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .fmlogo {
+    font-size: 28px;
+  }
+
+  .address {
+    font-size: 12px;
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+
+  .sociallinks {
+    flex-direction: column;
+    gap: 8px;
+    margin: 20px 0;
+  }
+
+  .sociallinks h1 {
+    font-size: 16px;
+  }
+
+  .InfServ {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .info h1,
+  .Serv h1 {
+    font-size: 18px;
+  }
+
+  .slink {
+    font-size: 13px;
+  }
 }

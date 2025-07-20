@@ -56,7 +56,7 @@
   text-decoration: none;
   color: white;
   font-size: 24px;
-  font-family: sans-serif;
+  font-family: Instrument-Sans;
   transition: color 0.3s;
 }
 
@@ -83,6 +83,7 @@
 .signup-mobile {
   display: none;
 }
+
 
 /* Responsive Styling */
 @media (max-width: 768px) {
@@ -285,6 +286,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    
   }
 
   .footer-left, .footer-center, .footer-right {
@@ -294,5 +296,7 @@
   .footer-right {
     flex-direction: column;
     align-items: center;
+    
   }
+  
 }
